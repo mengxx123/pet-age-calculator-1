@@ -13,11 +13,16 @@ form {
 }
 
 p {
-  margin-top: 200px;
+  margin-top: 170px;
   font-size: 75px;
   color: white;
 }
 
 label {
   color: white;
+}
+
+h1 {
+  color: white;
+  padding-top: 15px;
 }
