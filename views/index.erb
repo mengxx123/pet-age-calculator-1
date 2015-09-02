@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Pet Age Calculator</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/foundation.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body>
+    <img id="photo" class="large-6 columns small-12" src="http://i.imgur.com/pLJGcoI.jpg"/>
+    <form id ="myFrom" action="/petage" method="post" class="large-6 columns">
+        <div class="large-6 columns large-centered small-4 small-centered">
+          <input id="human_years" type="text" name="human_years" placeholder="Human Years" />
+        </div>
+
+        <div class="large-6 columns large-centered small-4 small-centered text-center">
+          <input type="radio" name="pet" value="dog" id="dog"><label for="dog">Dog</label>
+          <input type="radio" name="pet" value="cat" id="cat"><label for="cat">Cat</label>
+        </div>
+
+         <div class="large-6 columns large-centered small-4 small-centered text-center">
+          <input class="button secondary small radius" type="submit"/>
+        </div>
+
+    </form>
+    </div>
+
+    <div class="large-6 columns text-right" id="text">
+      <p id="outcome"></p>
+    </div>
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
