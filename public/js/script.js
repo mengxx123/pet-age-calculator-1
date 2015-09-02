@@ -28,11 +28,11 @@ $(document).ready(function() {
                 age: $('#human_years').val() }
     if (pet.type === 'cat') {
       pet.age = pet.age * 5;
-      $('#outcome').text(pet.age + ' years in cat');
+      $('#outcome').text(pet.age + ' cat years');
 
     } else if (pet.type === 'dog') {
       pet.age = pet.age * 7;
-      $('#outcome').text(pet.age + ' years in dog');
+      $('#outcome').text(pet.age + ' dog years');
       };
   });
 
