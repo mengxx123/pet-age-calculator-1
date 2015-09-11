@@ -32,7 +32,7 @@ $(document).ready(function() {
                 age: $('#human_years').val() }
 
     if (isNaN($('#human_years').val())) {
-      $('form').append("<div data-alert id='popUp' class='large-6 columns large-centered alert-box'>Please enter a number.<a href='#' class='close'>&times;</a></div>");
+      $('form').append("<div data-alert id='popUp' class='large-6 small-3 small-centered columns large-centered alert-box'>Please enter a number.<a href='#' class='close'>&times;</a></div>");
       $(document).foundation('alert', 'reflow');
 
     } else if (pet.type === 'cat') {
