@@ -22,19 +22,28 @@ $(document).ready(function() {
     $("#photo").attr('src', dogImages[x]);
   });
 
+
   $('form').submit(function(event) {
     event.preventDefault();
+    $('#outcome').text('');
+    $('.alert-box').hide();
+
     var pet = { type: $('form input[type=radio]:checked').val(),
                 age: $('#human_years').val() }
-    if (pet.type === 'cat') {
-      pet.age = pet.age * 5;
-      $('#outcome').text(pet.age + ' cat years');
 
+    if (isNaN($('#human_years').val())) {
+      $('form').append("<div data-alert id='popUp' class='large-6 columns large-centered alert-box'>Please enter a number.<a href='#' class='close'>&times;</a></div>");
+      $(document).foundation('alert', 'reflow');
+
+    } else if (pet.type === 'cat') {
+        pet.age = pet.age * 5;
+        $('#outcome').text(pet.age + ' cat years');
     } else if (pet.type === 'dog') {
-      pet.age = pet.age * 7;
-      $('#outcome').text(pet.age + ' dog years');
+        pet.age = pet.age * 7;
+        $('#outcome').text(pet.age + ' dog years');
       };
   });
+
 
 
 

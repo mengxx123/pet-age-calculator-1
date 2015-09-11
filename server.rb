@@ -12,6 +12,5 @@ end
 
 post '/petage' do
 
-  @animal = Pet.new(params["human_years"].to_i, params["pet"])
   erb :index
 end
