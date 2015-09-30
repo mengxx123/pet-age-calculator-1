@@ -1,11 +1,18 @@
 var catImages = ['http://i.imgur.com/2dM1vap.jpg',
                  'http://i.imgur.com/pLJGcoI.jpg',
-                 'http://i.imgur.com/LVvQrHz.jpg'
+                 'http://i.imgur.com/LVvQrHz.jpg',
+                 'http://i.imgur.com/zMMBLCs.jpg',
+                 'http://i.imgur.com/oijgpEV.jpg',
+                 'http://i.imgur.com/DAquRcC.jpg'
                 ];
 var dogImages = ['http://i.imgur.com/QXqrD8d.jpg',
                   'http://i.imgur.com/XMHXERV.jpg',
                   'http://i.imgur.com/u4VK0Va.jpg',
-                  'http://i.imgur.com/x5zMxAH.jpg'
+                  'http://i.imgur.com/x5zMxAH.jpg',
+                  'http://i.imgur.com/Eq4bkmB.jpg',
+                  'http://i.imgur.com/QbQcUZz.jpg',
+                  'http://i.imgur.com/3fEdBIo.jpg',
+                  'http://i.imgur.com/4T2deHF.jpg'
                 ];
 
 var dogSize = dogImages.length
@@ -43,8 +50,5 @@ $(document).ready(function() {
         $('#outcome').text(pet.age + ' dog years');
       };
   });
-
-
-
 
 });
